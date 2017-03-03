@@ -1,0 +1,17 @@
+{
+  "name": "sg-project-1",
+  "description": "Spart Global Project 1",
+  "main": "index.js",
+  "authors": [
+    "doyinsan@spartaglobal.co"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/doyinsan/sg-project-1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
