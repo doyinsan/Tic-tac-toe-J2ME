@@ -1,127 +1,114 @@
 $(document).ready(function(){
-  var oneClick = 0;
+  //var oneClick = 0;
+
+
+
 
   $('#one').click(function() {
-    if ($('#one').addClass('D activate'))  {
-      oneClick--;
-    } else {
-      $('#one').addClass('A activate');
-    }
-    oneClick--;
-    alert('O has won the game. Start a new game');
-
-    $('#row1 td').removeClass('disable');
-    $('#row1 td').removeClass('D');
-    $('#row1 td').removeClass('A');
+    if ($(this).hasClass('first')) {
+      $(this).html('X').removeClass('first empty');
+    }//else if  ($(this).addClass('X'))
+      //if ($('#one').addClass('X')) {
+        //oneClick;
+      //}else
+        //($('#one').addClass('X'));
+    //{
+      //oneClick;
+    //}
   });
 
   $('#two').click(function() {
-    if ($('#two').addClass('D activate'))  {
-      oneClick--;
-    } else {
-      $('#1').addClass('A activate');
-    }
-    oneClick--;
-    alert('O has won the game. Start a new game');
-
-    $('#row1 td').removeClass('disable');
-    $('#row1 td').removeClass('D');
-    $('#row1 td').removeClass('A');
+    if ($(this).hasClass('first')){
+      $(this).html('O').removeClass('first empty');
+    }//else if (this.hasClass('O'))
+      //if ($('#two').addClass('O'))  {
+        //oneClick;
+      //} else {
+        //$('#two').addClass('O');
+      //}
+    //oneClick;
   });
 
   $('#three').click(function() {
-    if ($('#three').addClass('D activate'))  {
-      oneClick--;
-    } else {
-      $('#1').addClass('A activate');
-    }
-    oneClick--;
-    alert('O has won the game. Start a new game');
-
-    $('#row1 td').removeClass('disable');
-    $('#row1 td').removeClass('D');
-    $('#row1 td').removeClass('A');
+    if ($(this).hasClass('first')){
+      $(this).html('X').removeClass('first empty');
+    }//else if  (this.hasClass('X'))
+      //if ($('#three').addClass('X'))  {
+        //oneClick;
+      //} else {
+        //$('#three').addClass('X');
+      //}
+    //oneClick;
   });
-
   $('#four').click(function() {
-    if ($('#four').addClass('D activate'))  {
-      oneClick--;
-    } else {
-      $('#1').addClass('A activate');
-    }
-    oneClick--;
-    alert('O has won the game. Start a new game');
-
-    $('#row1 td').removeClass('disable');
-    $('#row1 td').removeClass('D');
-    $('#row1 td').removeClass('A');
+    if ($(this).hasClass('first')){
+      $(this).html('O').removeClass('first empty');
+    }//else if  (this.hasClass('O'))
+    //  if ($('#four').addClass('O'))  {
+      //  oneClick;
+      //} else {
+        //$('#four').addClass('O');
+      //}
+    //oneClick;
   });
+
   $('#five').click(function() {
-    if ($('#five').addClass('D activate'))  {
-      oneClick--;
-    } else {
-      $('#1').addClass('A activate');
-    }
-    oneClick--;
-    alert('O has won the game. Start a new game');
-
-    $('#row1 td').removeClass('disable');
-    $('#row1 td').removeClass('D');
-    $('#row1 td').removeClass('A');
+    if ($(this).hasClass('first')){
+      $(this).html('X').removeClass('first empty');
+    }//else if  (this.hasClass('X'))
+      //if ($('#five').addClass('X'))  {
+        //oneClick;
+      //} else {
+        //$('#five').addClass('X');
+      //}
+    //oneClick;
   });
-
   $('#six').click(function() {
-    if ($('#six').addClass('D activate'))  {
-      oneClick--;
-    } else {
-      $('#1').addClass('A activate');
-    }
-    oneClick--;
-    alert('O has won the game. Start a new game');
-
-    $('#row1 td').removeClass('disable');
-    $('#row1 td').removeClass('D');
-    $('#row1 td').removeClass('A');
+    if ($(this).hasClass('first')){
+      $(this).html('O').removeClass('first empty');
+    }//else if  (this.hasClass('O'))
+  //    if ($('#six').addClass('O'))  {
+    //    oneClick;
+      //} else {
+        //$('#six').addClass('O');
+      //}
+    //oneClick;
   });
-
   $('#seven').click(function() {
-    if ($('#seven').addClass('D activate'))  {
-      oneClick--;
-    } else {
-      $('#1').addClass('A activate');
-    }
-    oneClick--;
-    alert(' has won the game. Start a new game');
-
-    $('#row1 td').removeClass('disable');
-    $('#row1 td').removeClass('D');
-    $('#row1 td').removeClass('A');
+    if ($(this).hasClass('first')){
+      $(this).html('X').removeClass('first empty');
+    }//else if  (this.hasClass('X'))
+      //if ($('#seven').addClass('X'))  {
+        //oneClick;
+      //} else {
+        //$('#steven').addClass('X');
+    //  }
+    //oneClick;
   });
-
   $('#eight').click(function() {
-    if ($('#eight').addClass('D activate'))  {
-      oneClick--;
-    } else {
-      $('#1').addClass('A activate');
-    }
-    oneClick--;
-    alert('O has won the game. Start a new game');
-    $('#row1 td').removeClass('disable');
-    $('#row1 td').removeClass('D');
-    $('#row1 td').removeClass('A');
+    if ($(this).hasClass('first')){
+      $(this).html('O').removeClass('first empty');
+    }//else if  (this.hasClass('O'))
+      //if ($('#eight').addClass('O'))  {
+        //oneClick;
+      //} else {
+        //$('#eight').addClass('O');
+    //  }
+    //oneClick;
   });
-
   $('#nine').click(function() {
-    if ($('#nine').addClass('D activate'))  {
-      oneClick--;
-    } else {
-      $('#1').addClass('A activate');
+    if ($(this).hasClass('first')){
+      $(this).html('X').removeClass('first empty');
     }
-    oneClick--;
-    alert('O has won the game. Start a new game');
-
-    $('#row1 td').removeClass('disable');
-    $('#row1 td').removeClass('D');
-    $('#row1 td').removeClass('A');
+    //else if  (this.hasClass('X'))
+      //if ($('#nine').addClass('X'))  {
+        //oneClick;
+      //} else {
+        //$('#nine').addClass('X');
+    //  }
+    //oneClick;
   });
+
+
+
 });

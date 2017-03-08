@@ -13,3 +13,18 @@ border: 1px solid black;
 height: 110px;
 width: 110px;
 }
+
+.X {
+background-color: red;
+font-size: 50px;
+}
+
+.O {
+background-color: blue;
+font-size: 50px;
+}
+
+.clr {
+  clear: both;
+  height: 0
+}
