@@ -1,114 +1,142 @@
 $(document).ready(function(){
-  //var oneClick = 0;
 
 
 
+  function isEven(num) {
+    return parseInt(num) % 2===0;
+  }
+  var count = 0;
+  $('.square').click(function(){
 
-  $('#one').click(function() {
-    if ($(this).hasClass('first')) {
-      $(this).html('X').removeClass('first empty');
-    }//else if  ($(this).addClass('X'))
-      //if ($('#one').addClass('X')) {
-        //oneClick;
-      //}else
-        //($('#one').addClass('X'));
-    //{
-      //oneClick;
+
+    count++;
+    var squareClass =(isEven(count)) ? 'O' : 'X';
+    $(this).addClass(squareClass);
+
+
+
+    $(function(){
+      if ($('#one').hasClass('X') && $('#two').hasClass('X') && $('#three').hasClass('X')
+    ||$('#one').hasClass('X') && $('#four').hasClass('X') && $('#seven').hasClass('X')
+  ||$('#one').hasClass('X') && $('#five').hasClass('X') && $('#nine').hasClass('X')||
+$('#one').hasClass('X') && $('#four').hasClass('X') && $('#seven').hasClass('X')
+||$('#two').hasClass('X') && $('#five').hasClass('X') && $('#eight').hasClass('X')
+||$('#three').hasClass('X') && $('#six').hasClass('X') && $('#nine').hasClass('X')
+|| $('#four').hasClass('X') && $('#five').hasClass('X') && $('#six').hasClass('X')
+|| $('#seven').hasClass('X') && $('#eight').hasClass('X') && $('#nine').hasClass('X')
+||$('#three').hasClass('X') && $('#five').hasClass('X') && $('#seven').hasClass('X')
+||$('#two').hasClass('X') && $('#five').hasClass('X') && $('#eight').hasClass('X')){
+        alert('X wins, :D!');
+
+
+      }else if
+($('#one').hasClass('O') && $('#two').hasClass('O') && $('#three').hasClass('O')||
+$('#one').hasClass('O') && $('#four').hasClass('O') && $('#seven').hasClass('O')
+||$('#one').hasClass('O') && $('#five').hasClass('O') && $('#nine').hasClass('O')||
+$('#one').hasClass('O') && $('#four').hasClass('O') && $('#seven').hasClass('O')
+||$('#two').hasClass('O') && $('#five').hasClass('O') && $('#eight').hasClass('O')
+||$('#three').hasClass('O') && $('#six').hasClass('O') && $('#nine').hasClass('O')
+|| $('#four').hasClass('O') && $('#five').hasClass('O') && $('#six').hasClass('O')
+|| $('#seven').hasClass('O') && $('#eight').hasClass('O') && $('#nine').hasClass('O')
+||$('#three').hasClass('O') && $('#five').hasClass('O') && $('#seven').hasClass('O')
+||$('#two').hasClass('O') && $('#five').hasClass('O') && $('#eight').hasClass('O')){
+        alert('O wins, :D!');
+      }
+    });
+
+  //$('#one').click(function() {
+    //if ($(this).hassClass('first')) {
+      //$(this).html('X').removeClass('first empty');
     //}
-  });
+  //});
+  //$('#one').dblclick(function() {
+  //   $(this).hasClass('first');
+  //   $(this).html('O').removeClass('first empty');
+  //
+  // });
+  //
+  // $('#two').click(function() {
+  //   if ($(this).hasClass('first')){
+  //     $(this).html('X').removeClass('first empty');
+  //   }
+  // });
+  // $('#two').dblclick(function() {
+  //   $(this).hasClass('first');
+  //   $(this).html('O').removeClass('first empty');
+  //
+  // });
+  //
+  // $('#three').click(function() {
+  //   if ($(this).hasClass('first')){
+  //     $(this).html('X').removeClass('first empty');
+  //
+  //   }
+  // });
+  // $('#three').dblclick(function() {
+  //   $(this).hasClass('first');
+  //   $(this).html('O').removeClass('first empty');
+  //
+  // });
+  // $('#four').click(function() {
+  //   if ($(this).hasClass('first')){
+  //     //$(this).html('X').removeClass('first empty');
+  //   }
+  // });
+  // $('#four').dblclick(function() {
+  //   $(this).hasClass('first');
+  //   $(this).html('O').removeClass('first empty');
+  //
+  // });
+  // $('#five').click(function() {
+  //   if ($(this).hasClass('first')){
+  //     $(this).html('X').removeClass('first empty');
+  //   }
+  // });
+  // $('#five').dblclick(function() {
+  //   $(this).hasClass('first');
+  //   $(this).html('O').removeClass('first empty');
+  //
+  // });
+  // //$('#six').click(function() {
+    //if ($(this).hasClass('first')){
+    //  $(this).html('X').removeClass('first empty');
+    //}
+  //});
 
-  $('#two').click(function() {
-    if ($(this).hasClass('first')){
-      $(this).html('O').removeClass('first empty');
-    }//else if (this.hasClass('O'))
-      //if ($('#two').addClass('O'))  {
-        //oneClick;
-      //} else {
-        //$('#two').addClass('O');
-      //}
-    //oneClick;
-  });
+  //$('#six').dblclick(function() {
+    //$(this).hasClass('first');
+    //$(this).html('O').removeClass('first empty');
 
-  $('#three').click(function() {
-    if ($(this).hasClass('first')){
-      $(this).html('X').removeClass('first empty');
-    }//else if  (this.hasClass('X'))
-      //if ($('#three').addClass('X'))  {
-        //oneClick;
-      //} else {
-        //$('#three').addClass('X');
-      //}
-    //oneClick;
-  });
-  $('#four').click(function() {
-    if ($(this).hasClass('first')){
-      $(this).html('O').removeClass('first empty');
-    }//else if  (this.hasClass('O'))
-    //  if ($('#four').addClass('O'))  {
-      //  oneClick;
-      //} else {
-        //$('#four').addClass('O');
-      //}
-    //oneClick;
-  });
+  //});
+  //$('#seven').click(function() {
+    //if ($(this).hasClass('first')){
+    //  $(this).html('X').removeClass('first empty');
+  //  }
+  //});
+  //$('#seven').dblclick(function() {
+    //$(this).hasClass('first');
+    //$(this).html('O').removeClass('first empty');
 
-  $('#five').click(function() {
-    if ($(this).hasClass('first')){
-      $(this).html('X').removeClass('first empty');
-    }//else if  (this.hasClass('X'))
-      //if ($('#five').addClass('X'))  {
-        //oneClick;
-      //} else {
-        //$('#five').addClass('X');
-      //}
-    //oneClick;
-  });
-  $('#six').click(function() {
-    if ($(this).hasClass('first')){
-      $(this).html('O').removeClass('first empty');
-    }//else if  (this.hasClass('O'))
-  //    if ($('#six').addClass('O'))  {
-    //    oneClick;
-      //} else {
-        //$('#six').addClass('O');
-      //}
-    //oneClick;
-  });
-  $('#seven').click(function() {
-    if ($(this).hasClass('first')){
-      $(this).html('X').removeClass('first empty');
-    }//else if  (this.hasClass('X'))
-      //if ($('#seven').addClass('X'))  {
-        //oneClick;
-      //} else {
-        //$('#steven').addClass('X');
-    //  }
-    //oneClick;
-  });
-  $('#eight').click(function() {
-    if ($(this).hasClass('first')){
-      $(this).html('O').removeClass('first empty');
-    }//else if  (this.hasClass('O'))
-      //if ($('#eight').addClass('O'))  {
-        //oneClick;
-      //} else {
-        //$('#eight').addClass('O');
-    //  }
-    //oneClick;
-  });
-  $('#nine').click(function() {
-    if ($(this).hasClass('first')){
-      $(this).html('X').removeClass('first empty');
-    }
-    //else if  (this.hasClass('X'))
-      //if ($('#nine').addClass('X'))  {
-        //oneClick;
-      //} else {
-        //$('#nine').addClass('X');
-    //  }
-    //oneClick;
-  });
+  //});
+  //$('#eight').click(function() {
+    //if ($(this).hasClass('first')){
+      //$(this).html('X').removeClass('first empty');
+    //}
+  //});
+  //$('#eight').dblclick(function() {
+    //$(this).hasClass('first');
+    //$(this).html('O').removeClass('first empty');
 
+  //});
+  //$('#nine').click(function() {
+    //if ($(this).hasClass('first')){
+    //  $(this).html('X').removeClass('first empty');
+    //}
+  //});
+  //$('#nine').dblclick(function() {
+  //  $(this).hasClass('first');
+  //  $(this).html('O').removeClass('first empty');
 
-
+//  });
+  });
 });
