@@ -26,7 +26,7 @@ $('#one').hasClass('X') && $('#four').hasClass('X') && $('#seven').hasClass('X')
 || $('#seven').hasClass('X') && $('#eight').hasClass('X') && $('#nine').hasClass('X')
 ||$('#three').hasClass('X') && $('#five').hasClass('X') && $('#seven').hasClass('X')
 ||$('#two').hasClass('X') && $('#five').hasClass('X') && $('#eight').hasClass('X')){
-        alert('X wins, :D!');
+        $('#result').html('X is a Winner, Sorry O loses');
 
 
       }else if
@@ -40,7 +40,13 @@ $('#one').hasClass('O') && $('#four').hasClass('O') && $('#seven').hasClass('O')
 || $('#seven').hasClass('O') && $('#eight').hasClass('O') && $('#nine').hasClass('O')
 ||$('#three').hasClass('O') && $('#five').hasClass('O') && $('#seven').hasClass('O')
 ||$('#two').hasClass('O') && $('#five').hasClass('O') && $('#eight').hasClass('O')){
-        alert('O wins, :D!');
+        $('#result').html('O is a Winner, Sorry X loses');
+
+
+      }else{
+        if(count === 9){
+          $('#result').html('IT A DRAW');
+        }
       }
     });
 
