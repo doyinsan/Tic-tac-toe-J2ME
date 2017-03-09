@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-
+  $('p').click(function(){
+    document.location.reload();
+  });
 
   function isEven(num) {
     return parseInt(num) % 2===0;
@@ -49,100 +51,5 @@ $('#one').hasClass('O') && $('#four').hasClass('O') && $('#seven').hasClass('O')
         }
       }
     });
-
-  //$('#one').click(function() {
-    //if ($(this).hassClass('first')) {
-      //$(this).html('X').removeClass('first empty');
-    //}
-  //});
-  //$('#one').dblclick(function() {
-  //   $(this).hasClass('first');
-  //   $(this).html('O').removeClass('first empty');
-  //
-  // });
-  //
-  // $('#two').click(function() {
-  //   if ($(this).hasClass('first')){
-  //     $(this).html('X').removeClass('first empty');
-  //   }
-  // });
-  // $('#two').dblclick(function() {
-  //   $(this).hasClass('first');
-  //   $(this).html('O').removeClass('first empty');
-  //
-  // });
-  //
-  // $('#three').click(function() {
-  //   if ($(this).hasClass('first')){
-  //     $(this).html('X').removeClass('first empty');
-  //
-  //   }
-  // });
-  // $('#three').dblclick(function() {
-  //   $(this).hasClass('first');
-  //   $(this).html('O').removeClass('first empty');
-  //
-  // });
-  // $('#four').click(function() {
-  //   if ($(this).hasClass('first')){
-  //     //$(this).html('X').removeClass('first empty');
-  //   }
-  // });
-  // $('#four').dblclick(function() {
-  //   $(this).hasClass('first');
-  //   $(this).html('O').removeClass('first empty');
-  //
-  // });
-  // $('#five').click(function() {
-  //   if ($(this).hasClass('first')){
-  //     $(this).html('X').removeClass('first empty');
-  //   }
-  // });
-  // $('#five').dblclick(function() {
-  //   $(this).hasClass('first');
-  //   $(this).html('O').removeClass('first empty');
-  //
-  // });
-  // //$('#six').click(function() {
-    //if ($(this).hasClass('first')){
-    //  $(this).html('X').removeClass('first empty');
-    //}
-  //});
-
-  //$('#six').dblclick(function() {
-    //$(this).hasClass('first');
-    //$(this).html('O').removeClass('first empty');
-
-  //});
-  //$('#seven').click(function() {
-    //if ($(this).hasClass('first')){
-    //  $(this).html('X').removeClass('first empty');
-  //  }
-  //});
-  //$('#seven').dblclick(function() {
-    //$(this).hasClass('first');
-    //$(this).html('O').removeClass('first empty');
-
-  //});
-  //$('#eight').click(function() {
-    //if ($(this).hasClass('first')){
-      //$(this).html('X').removeClass('first empty');
-    //}
-  //});
-  //$('#eight').dblclick(function() {
-    //$(this).hasClass('first');
-    //$(this).html('O').removeClass('first empty');
-
-  //});
-  //$('#nine').click(function() {
-    //if ($(this).hasClass('first')){
-    //  $(this).html('X').removeClass('first empty');
-    //}
-  //});
-  //$('#nine').dblclick(function() {
-  //  $(this).hasClass('first');
-  //  $(this).html('O').removeClass('first empty');
-
-//  });
   });
 });
